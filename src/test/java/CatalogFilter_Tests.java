@@ -25,8 +25,8 @@ public class CatalogFilter_Tests {
         collection.open();
 
         filter.clickValue(firstValue);
-        filter.ValueShouldBeChecked(firstValue);
-        filter.ShouldBeActive();
+        filter.valueShouldBeChecked(firstValue);
+        filter.shouldBeActive();
 
         collection.shouldHaveSize(1);
         collection.shouldHaveText("Фискальный накопитель на 15 месяцев");

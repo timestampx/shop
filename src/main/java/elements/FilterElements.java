@@ -19,13 +19,13 @@ public class FilterElements {
     }
 
     // Проверяем, что чекбокс выделен
-    public FilterElements ValueShouldBeChecked(String value) {
+    public FilterElements valueShouldBeChecked(String value) {
         $(By.id(value)).shouldBe(Condition.checked);
         return this;
     }
 
     // Проверяем, что фильтр активен (есть выбранный чекбокс)
-    public FilterElements ShouldBeActive() {
+    public FilterElements shouldBeActive() {
         $(filterIsActiveSelector).shouldBe(Condition.enabled);
         return this;
     }
